@@ -1,8 +1,14 @@
 @import "normalize.css";
+@import "fonts";
 
 body {
-  font-family: sans-serif;
+  font-family: Inter, sans-serif;
   background-color: #FFF;
+  min-height: 100vh;
+
+  @supports (min-height: 100dvh) {
+    min-height: 100dvh;
+  }
 }
 
 html {
@@ -31,7 +37,14 @@ img, video {
 }
 
 button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
