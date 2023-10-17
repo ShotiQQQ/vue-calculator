@@ -1,11 +1,10 @@
 <script setup lang="ts">
 
+import AppMain from "@/components/AppMain.vue";
 </script>
 
 <template>
-  <main class="main">
-
-  </main>
+  <AppMain />
 </template>
 
 <style scoped>
